@@ -1,0 +1,21 @@
+.background {
+  min-height: 100vh;
+  background: url("../assets/images/technology/background-technology-desktop.jpg")
+    no-repeat center/cover;
+  display: grid;
+  grid-template-rows: 140px 1fr;
+}
+
+@media (max-width: 768px) {
+  .background {
+    background: url("../assets/images/technology/background-technology-tablet.jpg")
+      no-repeat center/cover;
+  }
+}
+
+@media (max-width: 475px) {
+  .background {
+    background: url("../assets/images/technology/background-technology-mobile.jpg")
+      no-repeat center/cover;
+  }
+}

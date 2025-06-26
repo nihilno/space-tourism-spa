@@ -1,0 +1,33 @@
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  color: hsl(var(--clr-light) / 0.75);
+  width: fit-content;
+}
+
+.title {
+  font-size: var(--size-4xl);
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: var(--spacing-2);
+
+  @media (max-width: 475px) {
+    font-size: var(--size-2xl);
+  }
+}
+
+.title > span {
+  font-family: var(--font-main);
+  font-size: var(--size-10xl);
+  color: hsl(var(--clr-white));
+  line-height: 1.4;
+
+  @media (max-width: 475px) {
+    font-size: var(--size-7xl);
+  }
+}
+
+.text {
+  max-width: 43ch;
+  line-height: 1.75;
+}

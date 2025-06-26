@@ -1,0 +1,119 @@
+.player {
+  position: absolute;
+  left: 8rem;
+  top: 90px;
+
+  @media (max-width: 768px) {
+    top: 70px;
+  }
+}
+
+.audio > audio {
+  display: none;
+}
+
+/* from https://codefronts.com/ */
+
+.playContain {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+}
+
+.playBtn {
+  background-color: transparent;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+
+  -o-transition: 0.1s;
+  -ms-transition: 0.1s;
+  -moz-transition: 0.1s;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+}
+
+.playBtn span {
+  background: linear-gradient(45deg, #007bff, #00ff88);
+  width: 100%;
+  height: 2px;
+  position: absolute;
+
+  -ms-transform-origin: 0% 0%;
+  -webkit-transform-origin: 0% 0%;
+  transform-origin: 0% 0%;
+
+  -o-transition: 0.1s;
+  -ms-transition: 0.1s;
+  -moz-transition: 0.1s;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+}
+
+.playBtn span:nth-child(1) {
+  top: 25%;
+  left: 50%;
+
+  transform: rotate(30deg) translate(-50%, -50%);
+  -webkit-transform: rotate(30deg) translate(-50%, -50%);
+
+  transition-timing-function: cubic-bezier(0.75, 0, 0.9, 1);
+  -webkit-transition-timing-function: cubic-bezier(0.75, 0, 0.9, 1);
+}
+
+.trigger .playBtn span:nth-child(1) {
+  top: 50% !important;
+  left: 70% !important;
+
+  transform: rotate(-90deg) translate(-50%, -50%) !important;
+  -webkit-transform: rotate(-90deg) translate(-50%, -50%) !important;
+}
+
+.playBtn span:nth-child(2) {
+  top: 50%;
+  left: 5%;
+
+  transform: rotate(90deg) translate(-50%, -50%);
+  -webkit-transform: rotate(90deg) translate(-50%, -50%);
+
+  transition-timing-function: cubic-bezier(0.25, 0.25, 0.1, 1.5);
+  -webkit-transition-timing-function: cubic-bezier(0.25, 0.25, 0.1, 1.5);
+}
+
+.trigger .playBtn span:nth-child(2) {
+  top: 50% !important;
+  left: 30% !important;
+
+  transform: rotate(90deg) translate(-50%, -50%) !important;
+  -webkit-transform: rotate(90deg) translate(-50%, -50%) !important;
+
+  -webkit-transition-delay: 0.25s;
+  transition-delay: 0.25s;
+}
+
+.playBtn span:nth-child(3) {
+  top: 75%;
+  left: 50%;
+
+  transform: rotate(-30deg) translate(-50%, -50%);
+  -webkit-transform: rotate(-30deg) translate(-50%, -50%);
+
+  transition-timing-function: cubic-bezier(0.75, 0, 0.9, 1);
+  -webkit-transition-timing-function: cubic-bezier(0.75, 0, 0.9, 1);
+}
+
+.trigger .playBtn span:nth-child(3) {
+  top: 50% !important;
+  left: 70% !important;
+
+  transform: rotate(90deg) translate(-50%, -50%) !important;
+  -webkit-transform: rotate(90deg) translate(-50%, -50%) !important;
+
+  -webkit-transition-delay: 0.1s;
+  transition-delay: 0.1s;
+}
